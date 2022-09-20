@@ -2,15 +2,15 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANEMIA</title>
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="js/functions.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
@@ -21,20 +21,26 @@
             </div>
             <div class="mb-1">
                 <form id="anemia">
-                    <div class="mb-4 d-flex justify-content-between">
-                        <div>
-                            
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                            <option selected></option>
+                            <option value="1">TRATAMIENTO PREVENTIVO PARA ANEMIA</option>
+                            <option value="2">TRATAMIENTO PARA ANEMIA</option>
+                        </select>
+                        <label for="floatingSelect">Seleccionar Tipo de Tratamiento</label>
+                    </div>
+                    <br>
+                    <div class="mb-4">
+                        <label for="basic-url" class="form-label"><i class="icofont-gnome"></i>Detalle Paciente</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">Peso</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
                         </div>
-                        <div>
-                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                        <!-- <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Peso</label>
                             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="ej: Gabriel" required>
                             <div class="nombre text-danger "></div>
-                        </div>
-                        <div>
-                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
-                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="ej: Pacheco" required>
-                            <div class="apellido text-danger"></div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="mb-4">
                         <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
@@ -64,7 +70,6 @@
             </div>
         </div>
     </section>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
