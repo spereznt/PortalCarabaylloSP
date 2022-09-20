@@ -31,9 +31,9 @@
                     </div>
                     <br>
                     <div class="mb-4">
-                        <label for="basic-url" class="form-label"><i class="icofont-gnome"></i>Detalle Paciente</label>
+                        <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> DETALLE PACIENTE</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon3">Peso</span>
+                            <span class="input-group-text" id="basic-addon3">PESO</span>
                             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
                         </div>
                         <!-- <div>
@@ -43,26 +43,34 @@
                         </div> -->
                     </div>
                     <div class="mb-4">
-                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
-                        <input type="email" class="form-control" name="correo" id="correo" placeholder="ej: gpmcheco@mail.com" required>
-                        <div class="correo text-danger"></div>
-
+                        <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> RESULTADO</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">DOSIS HIERRO ELEMENTAL(2 MG/KG)</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD GOTAS DIA</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD MILILITROS DIA</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                        </div>
                     </div>
                     <div class="mb-4">
-                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
-                        <input type="radio" class="form-check-input" name="sexo" value="masculino"> Masculino
-                        <input type="radio" class="form-check-input" name="sexo" value="femenino"> Femenino
-                        <div class="sexo text-danger"></div>
+                        <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> CANTIDAD FRASCOS</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">GOTAS (25MG/ML)</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">MILILITROS (15 MG/5ML)</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="ej: hola"></textarea>
-                        <div class="mensaje text-danger"></div>
-                    </div>
-
                     <div class="mb-2">
                         <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
-                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                            <span>CALCULAR </span><i id="icono" class="bi bi-cursor-fill "></i>
                         </button>
                     </div>
 
