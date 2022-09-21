@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="mb-1">
                 <form id="anemia">
                     <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                        <select id="lista" class="form-select" aria-label="Floating label select example"  required>
                             <option selected></option>
                             <option value="1">TRATAMIENTO PREVENTIVO PARA ANEMIA</option>
                             <option value="2">TRATAMIENTO PARA ANEMIA</option>
@@ -33,7 +34,7 @@
                     <div class="mb-4">
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> DETALLE PACIENTE</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon3">PESO</span>
+                            <span class="input-group-text" id="peso" >PESO</span>
                             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
                         </div>
                         <!-- <div>
@@ -69,7 +70,7 @@
                         </div>
                     </div>
                     <div class="mb-2">
-                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between" onclick="saludo()">
                             <span>CALCULAR </span><i id="icono" class="bi bi-cursor-fill "></i>
                         </button>
                     </div>
