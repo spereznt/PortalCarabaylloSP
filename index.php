@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANEMIA</title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script type="text/javascript" src="js/functions2.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
@@ -23,10 +21,10 @@
             <div class="mb-1">
                 <form id="anemia">
                     <div class="form-floating">
-                        <select id="lista" class="form-select" aria-label="Floating label select example"  required>
-                            <option selected></option>
-                            <option value="1">TRATAMIENTO PREVENTIVO PARA ANEMIA</option>
-                            <option value="2">TRATAMIENTO PARA ANEMIA</option>
+                        <select id="listattos" class="form-select" aria-label="Floating label select example"  >
+                            <option selected>SELECCIONAR</option>
+                            <option value="tto1">TRATAMIENTO PREVENTIVO PARA ANEMIA</option>
+                            <option value="tto2">TRATAMIENTO PARA ANEMIA</option>
                         </select>
                         <label for="floatingSelect">Seleccionar Tipo de Tratamiento</label>
                     </div>
@@ -34,20 +32,15 @@
                     <div class="mb-4">
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> DETALLE PACIENTE</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="peso" >PESO</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
+                            <span class="input-group-text">PESO</span>
+                            <input type="text" id="peso" class="form-control" aria-describedby="basic-addon3" >
                         </div>
-                        <!-- <div>
-                            <label for="nombre"> <i class="bi bi-person-fill"></i> Peso</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="ej: Gabriel" required>
-                            <div class="nombre text-danger "></div>
-                        </div> -->
                     </div>
                     <div class="mb-4">
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> RESULTADO</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon3">DOSIS HIERRO ELEMENTAL(2 MG/KG)</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <span class="input-group-text" id="">DOSIS HIERRO ELEMENTAL(2 MG/KG)</span>
+                            <input type="text" name="dosishierro" id="dosishierro" class="form-control"  aria-describedby="basic-addon3" disabled>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD GOTAS DIA</span>
@@ -70,7 +63,7 @@
                         </div>
                     </div>
                     <div class="mb-2">
-                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between" onclick="saludo()">
+                        <button id="botton" onclick="formulas()" class="col-12 btn btn-primary d-flex justify-content-between">
                             <span>CALCULAR </span><i id="icono" class="bi bi-cursor-fill "></i>
                         </button>
                     </div>
