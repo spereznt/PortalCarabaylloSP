@@ -8,7 +8,7 @@
     <title>ANEMIA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script type="text/javascript" src="js/functions2.js"></script>
+    
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -21,8 +21,8 @@
             <div class="mb-1">
                 <form id="anemia">
                     <div class="form-floating">
-                        <select id="listattos" class="form-select" aria-label="Floating label select example"  >
-                            <option selected>SELECCIONAR</option>
+                        <select id="listattos" class="form-select" aria-label="Floating label select example">
+                            <option selected></option>
                             <option value="tto1">TRATAMIENTO PREVENTIVO PARA ANEMIA</option>
                             <option value="tto2">TRATAMIENTO PARA ANEMIA</option>
                         </select>
@@ -63,15 +63,23 @@
                         </div>
                     </div>
                     <div class="mb-2">
+                        <button type="button" onclick="formulas()" class="col-12 btn btn-primary btn-lg btn-block">
+                            <i id="icono" class=" col-12 bi bi-cursor-fill "></i><span>CALCULAR</span>  
+                        </button>
+                        
+                    </div>
+                    <!-- <div class="mb-2">
                         <button id="botton" onclick="formulas()" class="col-12 btn btn-primary d-flex justify-content-between">
                             <span>CALCULAR </span><i id="icono" class="bi bi-cursor-fill "></i>
                         </button>
-                    </div>
+                    </div> -->
 
                 </form>
             </div>
         </div>
     </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="js/functions2.js"></script>
 </body>
 
 </html>
