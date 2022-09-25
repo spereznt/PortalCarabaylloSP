@@ -40,26 +40,26 @@
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> RESULTADO</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="">DOSIS HIERRO ELEMENTAL(2 MG/KG)</span>
-                            <input type="text" name="dosishierro" id="dosishierro" class="form-control"  aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" name="dosishierro" id="dosishierro" class="form-control"  aria-describedby="basic-addon3" disabled>
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD GOTAS DIA</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <span class="input-group-text" id="">TRATAMIENTO CANTIDAD GOTAS DIA</span>
+                            <input type="text" value="0" name="ttogd" id="ttogd" class="form-control" aria-describedby="basic-addon3" disabled>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD MILILITROS DIA</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
                         </div>
                     </div>
                     <div class="mb-4">
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> CANTIDAD FRASCOS</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">GOTAS (25MG/ML)</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">MILILITROS (15 MG/5ML)</span>
-                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
                         </div>
                     </div>
                     <div class="mb-2">

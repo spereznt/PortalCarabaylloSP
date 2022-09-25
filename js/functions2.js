@@ -4,7 +4,10 @@ function formulas(){
 	let listados = capListados.value;
 
 	let peso = Number(document.getElementById("peso").value);
+
+	
 	let dosisHierro=document.getElementById("dosishierro");
+	let ttogd =document.getElementById("ttogd");
 
 	if (listados=="") {
 		Swal.fire({
@@ -22,9 +25,14 @@ function formulas(){
 		  });
 	}else if (listados=="tto1") {
 		var res = peso * 2;
+		//var res2 = parseInt(res);
+
 		dosisHierro.value = res;	
+		ttogd.value = res;
+
 	}else if (listados=="tto2") {
 		var res = peso * 3
-		dosisHierro.value = res;	
+		dosisHierro.value = res;
+		ttogd.value = res;	
 	}
 }
