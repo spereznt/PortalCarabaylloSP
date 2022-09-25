@@ -48,23 +48,29 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">TRATAMIENTO CANTIDAD MILILITROS DIA</span>
-                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" name="ttomd" id="ttomd" class="form-control"  aria-describedby="basic-addon3" disabled>
                         </div>
                     </div>
                     <div class="mb-4">
                         <label for="basic-url" class="form-label"><i class="bi bi-envelope-fill"></i> CANTIDAD FRASCOS</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">GOTAS (25MG/ML)</span>
-                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" name="gotasmg" id="gotasmg" class="form-control"  aria-describedby="basic-addon3" disabled>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon3">MILILITROS (15 MG/5ML)</span>
-                            <input type="text" value="0" class="form-control" id="basic-url" aria-describedby="basic-addon3" disabled>
+                            <input type="text" value="0" name="gotaml" id="gotasml" class="form-control" aria-describedby="basic-addon3" disabled>
                         </div>
                     </div>
                     <div class="mb-2">
                         <button type="button" onclick="formulas()" class="col-12 btn btn-primary btn-lg btn-block">
                             <i id="icono" class=" col-12 bi bi-cursor-fill "></i><span>CALCULAR</span>  
+                        </button>
+                        
+                    </div>
+                    <div class="mb-2">
+                        <button type="button" id="btnRefresh" onclick="location.reload()" class="col-12 btn btn-primary btn-lg btn-block">
+                            <i id="icono" class=" col-12 bi bi-cursor-fill "></i><span>BORRAR</span>  
                         </button>
                         
                     </div>
